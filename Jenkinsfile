@@ -16,7 +16,7 @@ node() {
         withMaven {
             sh """
 			cd ${env.WORKSPACE_LOCAL}
-			mvn clean test
+			/usr/local/apache-maven-3.8.1/bin/mvn clean test
 		"""
         }
     }
